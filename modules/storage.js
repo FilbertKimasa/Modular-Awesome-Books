@@ -5,7 +5,7 @@ export default class Data {
 
   removeBook(title, author) {
     this.books = this.books.filter(
-      (book) => book.title !== title && book.author !== author
+      (book) => book.title !== title && book.author !== author,
     );
     this.updateStorage();
   }

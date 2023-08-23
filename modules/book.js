@@ -13,11 +13,11 @@ export default class Book {
     this.ui.addLink.addEventListener('click', content.addToList.bind(this));
     this.ui.listLink.addEventListener(
       'click',
-      content.displayBookList.bind(this)
+      content.displayBookList.bind(this),
     );
     this.ui.listContact.addEventListener(
       'click',
-      content.displayContactInfo.bind(this)
+      content.displayContactInfo.bind(this),
     );
 
     this.renderBooks();
@@ -30,7 +30,7 @@ export default class Book {
     if (title.length > 0 && author.length > 0) {
       const book = { title, author };
       const same = this.data.books.some(
-        (bk) => JSON.stringify(bk) === JSON.stringify(book)
+        (bk) => JSON.stringify(bk) === JSON.stringify(book),
       );
       if (!same) {
         this.data.books.push(book);
@@ -53,7 +53,7 @@ export default class Book {
             </p>
             <button class="remove-btn">Remove</button>
           </li>
-        `
+        `,
       )
       .join('');
 
