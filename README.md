@@ -139,7 +139,7 @@ npx eslint .
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add some more HTML content**
-- [ ] **Intergration with javascript**
+- [ ] **Add some more javascript**
 - [ ] **Intergration with database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
