@@ -1,4 +1,3 @@
-// uiModule.js
 export default class UI {
   constructor() {
     this.bookTitle = document.getElementById('book-title');

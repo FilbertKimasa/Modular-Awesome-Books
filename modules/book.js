@@ -6,14 +6,9 @@ export default class Book {
   constructor() {
     this.ui = new UI();
     this.data = new Data();
-
-    // this.init();
   }
 
   init() {
-    // this.UI.showDateTime();
-    // this.UI.showDate.innerText = formatDate(this.now);
-
     this.ui.addBtn.addEventListener('click', this.addBook.bind(this));
     this.ui.addLink.addEventListener('click', content.addToList.bind(this));
     this.ui.listLink.addEventListener(
@@ -29,8 +24,6 @@ export default class Book {
   }
 
   addBook() {
-    // this.books.push(book);
-    // this.updateStorage();
     const title = this.ui.bookTitle.value.trim();
     const author = this.ui.bookAuthor.value.trim();
 
@@ -49,7 +42,6 @@ export default class Book {
     window.stop();
   }
 
-  // ... (Other methods and functionalities)
   renderBooks() {
     this.ui.listEntry.innerHTML = this.data.books
       .map(

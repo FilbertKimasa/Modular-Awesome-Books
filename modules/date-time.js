@@ -1,4 +1,4 @@
-import { DateTime } from './test.js';
+import { DateTime } from './luxon.js';
 import UI from './ui.js';
 
 const currentDate = () => {
